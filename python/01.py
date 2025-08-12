@@ -6,9 +6,10 @@ case differences.
 import lorem
 
 #texto = lorem.sentence().lower() #gera uma frase toda em minuscula
-texto = 'bananabaxa'
+texto = 'llindo'
 i = 0
 maior_letra = 0
+letra_que_apareceu_mais_vezes = ''
 while i < len(texto):
 
     indicie = texto[i] # Pega letra por letra do TEXTO
@@ -18,9 +19,10 @@ while i < len(texto):
 
     if contagem > maior_letra:  # Verifica qual a letra que mais apareceu
         maior_letra = contagem
+        letra_que_apareceu_mais_vezes = indicie
 
     print(indicie,contagem)
 
-print(maior_letra)
+print(f"A letra que apareceu mais vezes foi {letra_que_apareceu_mais_vezes.upper()}, aparecendo {maior_letra} vezes")
 
 
